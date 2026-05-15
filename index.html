@@ -374,8 +374,8 @@ untuk fotografi lifestyle serta konten media sosial.
                 <a href="#"><i class="fa fa-instagram"></i></a>
             </p>
             <p id="tm-copyright">
-            	Copyright &copy; 2014 Company Name
-            </p>
+    Copyright &copy; <span id="year"></span> Vcame
+</p>
             </div>                    
         </div><!-- /.footer --> 
     </div>               
@@ -391,5 +391,9 @@ untuk fotografi lifestyle serta konten media sosial.
 <script src="js/jquery.flexslider.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/templatemo_script.js"></script>
+<script>
+document.getElementById("year").innerHTML =
+new Date().getFullYear();
+</script>
 </body>
 </html>
