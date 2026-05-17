@@ -53,7 +53,7 @@
 						</button>
 					</div>
 					
-					<p><a href="register.html">Belum punya akun? Register</a></p>a
+					<p><a href="register.html">Belum punya akun? Register</a></p>
 				</form>
 			</div>
 		</div>
@@ -90,7 +90,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
         localStorage.getItem(username) === password
     ){
         localStorage.setItem("username", username);
-        window.location.href = "../index.html";
+        window.location.href = "login/index.html";
     } else {
         alert("Username atau password salah");
     }
