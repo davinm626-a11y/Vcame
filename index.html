@@ -459,13 +459,13 @@ Katalog Kamera
 document.getElementById("year").innerHTML =
 new Date().getFullYear();
 </script>
-    <script>
+   <script>
 const username = localStorage.getItem("username");
 const loginBtn = document.getElementById("loginBtn");
 const userText = document.getElementById("userText");
 
 if(username){
-    userText.innerHTML = "Halo " + username;
+    userText.innerHTML = "<a>Halo " + username + "</a>";
     loginBtn.innerHTML = "Logout";
     loginBtn.href = "#";
 
