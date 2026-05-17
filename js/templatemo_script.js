@@ -29,9 +29,7 @@ jQuery(function($) {
         $('#main-wrapper').delay(350)
         .css({'overflow':'visible'});
     }
-});
-        });
-    });
+});
     
     $(document).ready( function() {        
 
