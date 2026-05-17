@@ -330,3 +330,23 @@ img {  vertical-align: middle; }
     text-decoration: none;
     font-weight: bold;
 }
+
+#camera-slider .slides li{
+    text-align:center;
+    padding:15px;
+}
+
+#camera-slider img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+#camera-slider h3{
+    margin-top:10px;
+}
+
+#camera-slider .btn{
+    margin-top:10px;
+}
