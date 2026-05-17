@@ -16,8 +16,9 @@ jQuery(function($) {
             asNavFor: '#slider'
         });
 
-        $('#slider').flexslider({
-            animation: "slide",
+        $('.flexslider').flexslider({
+    animation: "slide"
+});
             controlNav: false,
             animationLoop: false,
             slideshow: false,
