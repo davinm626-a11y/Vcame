@@ -33,7 +33,7 @@
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100 p-t-30 p-b-50">
 				<span class="login100-form-title p-b-41">
-					Account Login
+					Login Akun
 				</span>
 				<form class="login100-form validate-form p-b-33 p-t-5">
 
@@ -52,7 +52,8 @@
 							Login
 						</button>
 					</div>
-
+					
+					<a href="register.html">Belum punya akun? Register</a>
 				</form>
 			</div>
 		</div>
@@ -77,6 +78,24 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if(
+        (username === "heri" && password === "123") ||
+        localStorage.getItem(username) === password
+    ){
+        localStorage.setItem("username", username);
+        window.location.href = "../index.html";
+    } else {
+        alert("Username atau password salah");
+    }
+});
+</script>
 
 </body>
 </html>
