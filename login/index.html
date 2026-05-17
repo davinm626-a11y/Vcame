@@ -90,7 +90,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
         localStorage.getItem(username) === password
     ){
         localStorage.setItem("username", username);
-        window.location.href = "login/index.html";
+        window.location.href = "../index.html";
     } else {
         alert("Username atau password salah");
     }
