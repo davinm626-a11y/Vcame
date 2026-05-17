@@ -16,18 +16,20 @@ jQuery(function($) {
             asNavFor: '#slider'
         });
 
-        $('.flexslider').flexslider({
-    animation: "slide"
+       $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel",
+
+    start: function(slider){
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+        $('#main-wrapper').delay(350)
+        .css({'overflow':'visible'});
+    }
 });
-            controlNav: false,
-            animationLoop: false,
-            slideshow: false,
-            sync: "#carousel",
-            start: function(slider){
-                $('#status').fadeOut(); // will first fade out the loading animation
-                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-                $('#main-wrapper').delay(350).css({'overflow':'visible'});
-            }
         });
     });
     
