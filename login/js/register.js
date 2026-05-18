@@ -9,7 +9,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"
         },
-        body: `action=register&username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}`
+        body: `action=register&username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
     });
 
     const data = await res.json();
